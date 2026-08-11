@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="PlainCrud.Abstractions/PlainCrud.Abstractions.csproj" />
+  <Project Path="PlainCrud.Extensions/PlainCrud.Extensions.csproj" />
   <Project Path="Testing/Testing.csproj" />
 </Solution>

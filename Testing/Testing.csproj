@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlainCrud.Abstractions\PlainCrud.Abstractions.csproj" />
+    <ProjectReference Include="..\PlainCrud.Extensions\PlainCrud.Extensions.csproj" />
   </ItemGroup>
 
   <ItemGroup>
