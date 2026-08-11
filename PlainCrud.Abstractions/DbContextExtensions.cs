@@ -40,7 +40,7 @@ public static class DbContextExtensions
         var tableName = entityType.GetTableName()
             ?? throw new InvalidOperationException($"Entity type '{typeof(TEntity).Name}' is not mapped to a table.");
         var identityColumn = keyProperty.GetColumnName();
-        var result = new Dictionary<string, object>();
+        var result = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);
 
         foreach (var property in entityType.GetProperties())
         {
