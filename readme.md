@@ -1,0 +1,5 @@
+This is because I got fed up with EF Core concurrency exceptions that shouldn't happen, that I couldn't figure out. I still want to use EF Core for queries and migrations. But for single-row inserts and updates where I'm getting bogus concurrency exceptions, I wanted an option to insert or update a row directly. I also didn't want raw inline SQL. There are ways to make that safe, but it requires too thought. I wanted something no more complex than passing the original entity.
+
+There are plenty of existing libraries and approaches for this, but I had something very specific in mind for the behavior that I wanted. I opted to use Dapper as the intermediate library as it has nice parameter handling, and lets you abstract the raw SQL itself, presenting a clean, safe method.
+
+The core of this are some extension methods: [DbContextExtensions](PlainCrud.Extensions/DbContextExtensions.cs).
