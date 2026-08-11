@@ -2,8 +2,8 @@
 
 namespace PlainCrud.Abstractions;
 
-public interface ISqlBuilder
+public interface ISqlProvider
 {    
-    CommandDefinition Insert(IDictionary<string, object> entity);
-    CommandDefinition Update(IDictionary<string, object> entity);
+    CommandDefinition Insert(string tableName, string identityColumn, IDictionary<string, object> entity);
+    CommandDefinition Update(string tableName, string identityColumn, IDictionary<string, object> entity);
 }
