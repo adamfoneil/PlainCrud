@@ -3,6 +3,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace PlainCrud.Abstractions;
 
+/// <summary>
+/// this is because I was getting nonsensical concurrency exceptions using plain EF Core SaveChanges, so I switched to 
+/// the "nuclear option" of Dapper with some niceties to make it align with an existing EF Core DbContext
+/// </summary>
 public static class DbContextExtensions
 {
     public static async Task<TKey> InsertAsync<TEntity, TKey>(this DbContext dbContext, TEntity entity, ISqlProvider sqlBuilder)
