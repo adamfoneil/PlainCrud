@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Dapper;
 
-namespace PlainCrud.Abstractions;
+namespace PlainCrud.Extensions;
 
 public class MySqlProvider : ISqlProvider
 {

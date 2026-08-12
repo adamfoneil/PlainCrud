@@ -1,5 +1,5 @@
 ﻿using Dapper;
-using PlainCrud.Abstractions;
+using PlainCrud.Extensions;
 
 namespace Testing;
 

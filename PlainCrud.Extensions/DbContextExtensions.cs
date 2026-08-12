@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using Microsoft.EntityFrameworkCore;
 
-namespace PlainCrud.Abstractions;
+namespace PlainCrud.Extensions;
 
 /// <summary>
 /// this is because I was getting nonsensical concurrency exceptions using plain EF Core SaveChanges, so I switched to 

@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace PlainCrud.Abstractions;
+namespace PlainCrud.Extensions;
 
 public interface ISqlProvider
 {    
