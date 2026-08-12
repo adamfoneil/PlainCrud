@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace PlainCrud.Extensions;
 
 /// <summary>
-/// this is because I was getting nonsensical concurrency exceptions using plain EF Core SaveChanges, so I switched to 
+/// this is because I was getting nonsensical concurrency exceptions in AWS Aurora using plain EF Core SaveChanges, so I switched to 
 /// the "nuclear option" of Dapper with some niceties to make it align with an existing EF Core DbContext
 /// </summary>
 public static class DbContextExtensions
